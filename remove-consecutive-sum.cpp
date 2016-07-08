@@ -28,18 +28,18 @@ int largestNum(int input) {
 }
 
 int main () {
-  int num = largestNum(99145),n, t, sum = 0, remainder;
+  int num = largestNum(99145),large=0,rem=0;
   std::cout << "Largest number is " << num;
-  
-   t = num;
+  while (num > 0) {
+                rem = num % 10;
+
+                if (rem > large) {
+                        large = rem;
+                }
+
+                num = num / 10;
+        }
  
-   while (t != 0)
-   {
-      remainder = t % 10;
-      sum       = sum + remainder;
-      t         = t / 10;
-   }
- 
-   printf("\nSum of digits of %d = %d\n", num, sum);
+   printf("\nSum of digits of %d \n", large);
   return 0;
 }
