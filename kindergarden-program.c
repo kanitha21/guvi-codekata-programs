@@ -1,9 +1,8 @@
 #include<stdio.h>
-#include<conio.h>
-void main()
+
+int main()
 {
 int aa,p,i,j,count=0;
-clrscr();
 printf("\n Enter the total number of students:");
 scanf("%d",&aa);
 p=2*aa;
@@ -15,5 +14,5 @@ for(j=i+1;j<=p;j++)
  count++;
  }  }
  printf("the combination of daily walk is %d",count);
- getch();
+ return 0;
 }
