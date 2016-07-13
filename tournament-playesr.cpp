@@ -3,15 +3,15 @@ using namespace std;
 int checkTwo(int n);
 int bye1(int p);
 int bye2(int p);
-int main()
-{
-int p;
-cout<<"enter the number of players: ";
-cin>>p;
-bye1(p);
-bye2(p);
-return 0;
-}
+  int main()
+    {
+      int p;
+      cout<<"enter the number of players: ";
+      cin>>p;
+      bye1(p);
+      bye2(p);
+      return 0;
+    }
 int bye1(int p)
 {
 int a;
