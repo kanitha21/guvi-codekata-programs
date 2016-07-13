@@ -20,7 +20,6 @@ int isSumTree(struct node* node)
 		return 1;
 ls = sum(node->left);
 rs = sum(node->right);
-	property return 1 else 0*/
 	if((node->data == ls + rs)&&
 			isSumTree(node->left) &&
 			isSumTree(node->right))
