@@ -61,7 +61,7 @@ int longestPalSubstr( char *str )
 }
 int main()
 {
-	char str[] = "forgeeksskeegfor";
+	char str[] = "forbalaalabfor";
 	printf("\nLength is: %d\n", longestPalSubstr( str ) );
 	return 0;
 }
